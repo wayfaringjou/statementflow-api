@@ -1,14 +1,18 @@
 {
-  "name": "express-boilerplate",
+  "name": "statementflow-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require test/setup.js",
+    "test": "mocha --require test/setup.js --watch",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
+    "migrate:production": "env SSL=true DATABASE_URL=$(heroku config:get DATABASE_URL) npm run migrate",
     "predeploy": "npm audit",
-    "deploy": "git push heroku main"
+    "deploy": "git push heroku main",
+    "postdeploy": "npm run migrate:production"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +22,15 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.2.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "postgrator-cli": "^4.0.0",
+    "winston": "^3.3.3",
+    "xss": "^1.0.8"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "mocha": "^8.2.1",
