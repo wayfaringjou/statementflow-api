@@ -5,6 +5,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config');
 const validateBearerToken = require('./validate-bearer-token');
+const worksheetTemplatesRouter = require('./worksheetTemplates/worksheetTemplates.router');
 
 const app = express();
 
@@ -24,11 +25,14 @@ app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
+app.use('/api/templates', worksheetTemplatesRouter);
+
 app.use((error, req, res, next) => {
   let response;
   if (NODE_ENV === 'production') {
     response = { error: { message: 'server error' } };
   } else {
+    console.log('Error object:');
     console.error(error);
     response = { message: error.message, error };
   }
