@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const xss = require('xss');
-const { response } = require('express');
 const logger = require('../logger');
 const worksheetTemplatesService = require('./worksheetTemplates.service');
 
@@ -38,13 +37,13 @@ worksheetTemplatesRouter
       }
     });
     try {
-      const template = await worksheetTemplatesService.postTemplate(req.app.get('db'), newTemplate);
+      const postTemplate = await worksheetTemplatesService.postTemplate(req.app.get('db'), newTemplate);
 
-      logger.info(`Template with id ${template.id} created`);
+      logger.info(`Template with id ${postTemplate.id} created`);
       res
         .status(201)
-        .location(path.posix.join(req.originalUrl, `${template.id}`))
-        .json(serializeTemplate(template));
+        .location(path.posix.join(req.originalUrl, `${postTemplate.id}`))
+        .json(serializeTemplate(postTemplate));
     } catch (err) {
       next(err);
     }
