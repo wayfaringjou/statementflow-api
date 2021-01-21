@@ -78,7 +78,7 @@ describe('Statements endpoints', () => {
       });
     });
   });
-  describe('POST /api/templates', () => {
+  describe('POST /api/statements', () => {
     const testClients = makeClientsArray();
     beforeEach('insert clients data', () => db
       .into('clients')
