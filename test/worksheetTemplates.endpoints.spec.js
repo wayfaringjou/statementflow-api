@@ -17,9 +17,9 @@ describe('Templates endpoints', () => {
 
   after('disconnect from db', () => db.destroy());
 
-  before('clean the table', () => db.raw('TRUNCATE templates'));
+  before('clean the table', () => db.raw('TRUNCATE worksheets, templates RESTART IDENTITY CASCADE'));
 
-  afterEach('cleanup', () => db.raw('TRUNCATE templates'));
+  afterEach('cleanup', () => db.raw('TRUNCATE worksheets, templates RESTART IDENTITY CASCADE'));
 
   describe('GET /api/templates', () => {
     context('Given no templates', () => {
