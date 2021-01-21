@@ -18,9 +18,9 @@ describe('Statements endpoints', () => {
 
   after('disconnect from db', () => db.destroy());
 
-  before('clean the table', () => db.raw('TRUNCATE clients, statements RESTART IDENTITY CASCADE'));
+  before('clean the table', () => db.raw('TRUNCATE statements, clients RESTART IDENTITY CASCADE'));
 
-  afterEach('cleanup', () => db.raw('TRUNCATE clients, statements RESTART IDENTITY CASCADE'));
+  afterEach('cleanup', () => db.raw('TRUNCATE statements,clients RESTART IDENTITY CASCADE'));
 
   describe('GET /api/statements', () => {
     context('Given no statements', () => {
@@ -52,7 +52,7 @@ describe('Statements endpoints', () => {
       it('responds with 404', () => {
         const statementId = 42;
         return supertest(app)
-          .get(`/api/statement/${statementId}`)
+          .get(`/api/statements/${statementId}`)
           .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
           .expect(404, { error: { message: "Statement doesn't exist" } });
       });

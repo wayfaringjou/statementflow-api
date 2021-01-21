@@ -16,9 +16,9 @@ describe('Clients endpoints', () => {
 
   after('disconnect from db', () => db.destroy());
 
-  before('clean the table', () => db.raw('TRUNCATE clients'));
+  before('clean the table', () => db.raw('TRUNCATE statements, clients RESTART IDENTITY CASCADE'));
 
-  afterEach('cleanup', () => db.raw('TRUNCATE clients'));
+  afterEach('cleanup', () => db.raw('TRUNCATE statements, clients RESTART IDENTITY CASCADE'));
 
   describe('GET /api/clients', () => {
     context('Given no clients', () => {
