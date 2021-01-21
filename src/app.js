@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config');
 const validateBearerToken = require('./validate-bearer-token');
 const worksheetTemplatesRouter = require('./worksheetTemplates/worksheetTemplates.router');
+const clientsRouter = require('./clients/clients.router');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/templates', worksheetTemplatesRouter);
+app.use('/api/clients', clientsRouter);
 
 app.use((error, req, res, next) => {
   let response;
