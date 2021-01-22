@@ -25,6 +25,8 @@ statementsRouter
     }
   })
   .post(jsonParser, async (req, res, next) => {
+    console.log('Received request:');
+    console.log(req.body);
     const { clientId, values } = req.body;
     const newStatement = { clientId, values };
 
@@ -58,7 +60,7 @@ statementsRouter
     try {
       const statement = await statementsService.getById(knexInstance, statementId);
       if (!statement) {
-        logger.error(`Note with ${statementId} not found`);
+        logger.error(`Statement with id: ${statementId} not found`);
         return res.status(404).json({
           error: { message: "Statement doesn't exist" },
         });
@@ -71,7 +73,22 @@ statementsRouter
     }
   })
   .get((req, res) => {
-    console.log(res.statement);
+    // console.log(res.statement);
     res.json(serializeStatement(res.statement));
+  })
+  .patch(jsonParser, async (req, res, next) => {
+    // console.log(req.body);
+    const { values } = req.body;
+    const statementToUpdate = { values };
+    try {
+      await statementsService.updateStatement(
+        req.app.get('db'),
+        req.params.statementId,
+        statementToUpdate,
+      );
+      res.status(204).end();
+    } catch (err) {
+      next(err);
+    }
   });
 module.exports = statementsRouter;

@@ -5,6 +5,7 @@ const app = require('../src/app');
 const { makeStatementsArray } = require('./statements.fixtures');
 const { makeClientsArray } = require('./clients.fixtures');
 const personalStatement = require('./personalStatement.json');
+const personalStatement2 = require('./personalStatement2.json');
 
 describe('Statements endpoints', () => {
   let db;
@@ -106,6 +107,40 @@ describe('Statements endpoints', () => {
             .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
             .expect(res.body);
         });
+    });
+  });
+  describe('PATCH /api/statements/:statementId', () => {
+    context('Given there are statements in the database', () => {
+      const testClients = makeClientsArray();
+      const testStatements = makeStatementsArray();
+
+      beforeEach('insert statements', () => db
+        .into('clients')
+        .insert(testClients)
+        .then(() => db
+          .into('statements')
+          .insert(testStatements)));
+
+      it('responds with 204 and updates the statement', () => {
+        const idToUpdate = 1;
+        const updateStatement = {
+          values: personalStatement2,
+        };
+        const expectedStatement = {
+          ...testStatements[idToUpdate - 1],
+          ...updateStatement,
+        };
+        return supertest(app)
+          .patch(`/api/statements/${idToUpdate}`)
+          .send(updateStatement)
+          .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+          .expect(204)
+          .then((res) => {
+            supertest(app)
+              .get(`/api/statement/${idToUpdate}`)
+              .expect(expectedStatement);
+          });
+      });
     });
   });
 });
