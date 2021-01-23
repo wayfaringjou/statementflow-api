@@ -64,14 +64,12 @@ worksheetTemplatesRouter
         });
       }
       res.template = template;
-      // console.log(res.template);
       next();
     } catch (err) {
       next(err);
     }
   })
   .get((req, res) => {
-    console.log(res.template);
     res.json(serializeTemplate(res.template));
   });
 module.exports = worksheetTemplatesRouter;

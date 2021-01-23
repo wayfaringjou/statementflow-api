@@ -25,8 +25,6 @@ statementsRouter
     }
   })
   .post(jsonParser, async (req, res, next) => {
-    console.log('Received request:');
-    console.log(req.body);
     const { clientId, values } = req.body;
     const newStatement = { clientId, values };
 
@@ -66,18 +64,15 @@ statementsRouter
         });
       }
       res.statement = statement;
-      // console.log(res.statement);
       next();
     } catch (err) {
       next(err);
     }
   })
   .get((req, res) => {
-    // console.log(res.statement);
     res.json(serializeStatement(res.statement));
   })
   .patch(jsonParser, async (req, res, next) => {
-    // console.log(req.body);
     const { values } = req.body;
     const statementToUpdate = { values };
     try {

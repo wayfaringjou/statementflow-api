@@ -13,10 +13,6 @@ const statementsService = {
       .then((rows) => rows[0]);
   },
   updateStatement(knex, id, newStatementFields) {
-    // console.log(knex);
-    console.log(id);
-    console.log(newStatementFields);
-    console.log(knex('statements').where({ id }));
     return knex('statements')
       .where({ id })
       .update(newStatementFields);

@@ -66,14 +66,12 @@ worksheetsRouter
         });
       }
       res.worksheet = worksheet;
-      // console.log(res.worksheet);
       next();
     } catch (err) {
       next(err);
     }
   })
   .get((req, res) => {
-    console.log(res.worksheet);
     res.json(serializeWorksheet(res.worksheet));
   });
 module.exports = worksheetsRouter;

@@ -63,14 +63,12 @@ clientsRouter
         });
       }
       res.client = client;
-      // console.log(res.client);
       next();
     } catch (err) {
       next(err);
     }
   })
   .get((req, res) => {
-    console.log(res.client);
     res.json(serializeClient(res.client));
   });
 module.exports = clientsRouter;
