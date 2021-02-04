@@ -61,15 +61,15 @@ All endpoints require `Authorization: Bearer {api-token}` included in the reques
 - `GET /api/templates`
 
   - Response:
-    List of all templates. Each template has an id, name and template data stored in JSON format.
+    - List of all templates. Each template has an id, name and template data stored in JSON format.
 
 - `GET /api/templates/{template-id}`
 
   - Response:
-    Single template for the given id.
+    - Single template for the given id.
 
 - `POST /api/templates/`
-  Create a new template object.
+  - Create a new template object.
 
   - Parameters
 
@@ -85,15 +85,15 @@ All endpoints require `Authorization: Bearer {api-token}` included in the reques
 - `GET /api/clients`
 
   - Response:
-    List of all clients. Each client has an id and name.
+    - List of all clients. Each client has an id and name.
 
 - `GET /api/clients/{client-id}`
 
   - Response:
-    Single client for the given id.
+    - Single client for the given id.
 
 - `POST /api/clients/`
-  Create a new client object.
+  - Create a new client object.
 
   - Parameters
 
@@ -108,15 +108,15 @@ All endpoints require `Authorization: Bearer {api-token}` included in the reques
 - `GET /api/statements`
 
   - Response:
-    List of all statements. Each statement has an id, the client's id for that statement, the date for that statement and the client's financial data stored in JSON format.
+    - List of all statements. Each statement has an id, the client's id for that statement, the date for that statement and the client's financial data stored in JSON format.
 
 - `GET /api/statements/{statement-id}`
 
   - Response:
-    Single statement for the given id.
+    - Single statement for the given id.
 
 - `POST /api/statements/`
-  Create a new statement object.
+  - Create a new statement object.
 
   - Parameters
 
@@ -127,7 +127,7 @@ All endpoints require `Authorization: Bearer {api-token}` included in the reques
     | values        |  json  | body | (Required) Structured data representing statement's sections, items and components with client's data |
 
 - `PATCH /api/statements/{statement-id}`
-  Update a statement object.
+  - Update a statement object.
 
   - Parameters
 
@@ -143,15 +143,15 @@ All endpoints require `Authorization: Bearer {api-token}` included in the reques
 - `GET /api/worksheets`
 
   - Response:
-    List of all worksheets. Each worksheet has an id, modified date, also references to client's id, template's id, and statement's data id.
+    - List of all worksheets. Each worksheet has an id, modified date, also references to client's id, template's id, and statement's data id.
 
 - `GET /api/worksheets/{worksheet-id}`
 
   - Response:
-    Single worksheet representation for the given id.
+    - Single worksheet representation for the given id.
 
 - `POST /api/worksheets/`
-  Create a new worksheet object.
+  - Create a new worksheet object.
 
   - Parameters
 
