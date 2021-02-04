@@ -1,26 +1,22 @@
-# Express Boilerplate!
+# 'Statementflow-api'
 
-This is a boilerplate project used for starting new projects!
+[Live App](https://statementflow.vercel.app/).
 
-## Set up
+## Description
+'Statementflow' is meant to be a tool to help accountants in the preparation of financial statements. The first version of this project offers basic functionality that can serve as a good foundation for further development.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+'Statementflow-api' is the server-side of the application. It is set-up to store and serve template, clients and worksheet data.
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## Further goals for this project
+For this first version there is one template available: "Personal Financial Statement (Compilation)". 
 
-## Scripts
+In future versions I expect to let users create their own templates using the client app. For now, templates have to be created as a JSON document and added using this API.
 
-Start the application `npm start`
+## Summary
+The server-side application offers CRUD functions for templates, worksheets, statements and clients.
 
-Start nodemon for the application `npm run dev`
+## Built with
+This project was made with Express, Knex and Postgresql.
 
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's main branch.
+## Client side repo:
+[Statementflow-api](https://github.com/wayfaringjou/statementflow)
