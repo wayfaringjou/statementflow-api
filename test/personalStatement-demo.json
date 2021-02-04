@@ -1,0 +1,1160 @@
+{
+  "section1ID": {
+    "items": {
+      "item1ID": {
+        "itemName": "Cash",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Bank Name",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Account Title",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Statement Date",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Restricted Yes/No",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Reconciled Balance",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Bank account balance",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Record the individual’s checkbook or passbook balance in all bank accounts as of the financial statement date. If possible, obtain copies of bank reconciliations."
+          },
+          "component3ID": {
+            "instruction": "Record total cash on hand in the statement of financial condition.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentPosition": 3,
+            "componentDescription": ""
+          },
+          "component2ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Restriction Note",
+            "componentType": "fieldset",
+            "componentPosition": 2,
+            "componentDescription": "Draft a note that describes the nature of any restrictions."
+          }
+        },
+        "itemPosition": 1,
+        "itemDescription": ""
+      },
+      "item2ID": {
+        "itemName": "Marketable Securities",
+        "itemDescription": "",
+        "components": {
+          "comp1ID": {
+            "componentName": "Listing of securities",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain or prepare a listing of marketable securities with the following information (or attach a separate listing if necessary).",
+            "value": [
+              [
+                {
+                  "value": "Name of issuer",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "No. of shares",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Date Acquired",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Pledged Yes/No",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (cost) per Share",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Market per Share",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Total Cost (tax basis)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Total Market",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                },
+                {
+                  "value": ""
+                }
+              ]
+            ]
+          },
+          "comp2ID": {
+            "instruction": "Record the total market value in the statement of financial condition.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "comp3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Balance:",
+                "value": 0,
+                "placeholder": ""
+              }
+            },
+            "componentName": "Broker balance",
+            "componentType": "fieldset",
+            "componentDescription": "Determine if the individual has a cash balance with a broker. If so, add this amount to cash or present as a separate item after cash."
+          },
+          "comp4ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Note:",
+                "value": 0,
+                "placeholder": ""
+              }
+            },
+            "componentName": "Margin account",
+            "componentType": "fieldset",
+            "componentDescription": "Determine if the individual has a margin account. Record this liability in the statement of financial condition."
+          },
+          "comp5ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Market values sources",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes the source(s) of market values."
+          },
+          "comp6ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Securities events",
+            "componentType": "fieldset",
+            "componentDescription": "Inquire if any of the above securities are pledged or restricted. Also inquire if there have been any major declines in market price subsequent to the financial statement date. Draft a subsequent event note, if appropriate."
+          }
+        }
+      },
+      "item3ID": {
+        "itemName": "Residences",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Address",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Approximate Square Footage",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (cost plus improvements)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about the individual’s residences:"
+          },
+          "component2ID": {
+            "instruction": "Record the estimated current value in the statement of financial condition.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": 0,
+                "placeholder": ""
+              }
+            },
+            "componentName": "Estimated value description",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes how the estimated current value was determined."
+          }
+        }
+      },
+      "item4ID": {
+        "itemName": "Other real estate investments (Including Leaseholds)",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                { "value": "", "disableEvents": true, "className": "thead" },
+                {
+                  "value": "Parcel #1",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Parcel #2",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Parcel #3",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Total",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                {
+                  "value": "Location and type",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Ownership %",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Individual's original ownership cost",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Current tax basis cost",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Monthly income",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Estimate current value",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentDescription": "Obtain the following information:"
+          },
+          "component2ID": {
+            "instruction": "Record the estimated current value in the statement of financial condition either separately or in the aggregate.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": 0,
+                "placeholder": ""
+              }
+            },
+            "componentName": "Estimated value description",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes how the estimated current values were determined."
+          }
+        }
+      },
+      "item5ID": {
+        "itemName": "Other future interests and similar assets",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Description of future interest",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Market Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (cost plus improvements)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about nonforfeitable rights (other than vested interests in pension/profit sharing plans) to receive future sums (for example, guaranteed minimum portions of pensions, deferred compensation contracts, irrevocable remainder interests in property subject to life estates, annuities, and fixed amounts of alimony for a definite future period)."
+          },
+          "component2ID": {
+            "instruction": "Record in the statement of financial condition the discounted amount of the future interests. (NOTE: Only rights that are for fixed or determinable amounts and not contingent on life expectancy, a future event, or future service should be recorded.)",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": 0,
+                "placeholder": ""
+              }
+            },
+            "componentName": "Estimated value description",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes nonforfeitable rights not included in the financial statements because they are contingent, e.g., annuity receivable contingent on retirement."
+          }
+        }
+      },
+      "item6ID": {
+        "itemName": "Other assets (Autos)",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Automobiles",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "How was the estimated current value determined?",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (original cost)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Estimated Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about other assets. If these are material, record the estimated current values in the statement of financial condition. Draft a note that describes how the estimated values were determined, e.g., appraisals, individual’s estimate, or car dealer’s blue book."
+          }
+        }
+      },
+      "item7ID": {
+        "itemName": "Other assets (Personal Property)",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Personal Property",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "How was the estimated current value determined?",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (original cost)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Estimated Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about other assets. If these are material, record the estimated current values in the statement of financial condition. Draft a note that describes how the estimated values were determined, e.g., appraisals, individual’s estimate, or car dealer’s blue book."
+          }
+        }
+      },
+      "item8ID": {
+        "itemName": "Other assets (Other)",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Other",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "How was the estimated current value determined?",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Tax Basis (original cost)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Estimated Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences detail",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about other assets. If these are material, record the estimated current values in the statement of financial condition. Draft a note that describes how the estimated values were determined, e.g., appraisals, individual’s estimate, or car dealer’s blue book."
+          }
+        }
+      }
+    },
+    "sectionName": "Assets",
+    "sectionPosition": 1,
+    "sectionDescription": "Assets are stated at their estimated current values."
+  },
+  "section2ID": {
+    "sectionName": "Liabilities and Net Worth",
+    "sectionPosition": 1,
+    "sectionDescription": "Liabilities at their estimated current amounts.",
+    "items": {
+      "item1ID": {
+        "itemName": "Residences",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Lien Holder",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Maurity Rate",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Interest Rate",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Monthly Payment",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Mortgage Liability",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Residences mortgage liabilities",
+            "componentType": "table",
+            "componentPosition": 1,
+            "componentDescription": "Obtain the following information about mortgage liability on the residences:"
+          },
+          "component2ID": {
+            "instruction": "Record the above notes payable in the statement of financial condition either separately or in the aggregate. Notes payable should be discounted for the interest rate implicit in the transaction at the date consummated. However, if the debt can currently be discharged at a lower amount, the debt should be presented at the lower amount.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Notes payable note",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a notes payable note that describes the holder, interest rate, due date, monthly payment, and collateral."
+          }
+        }
+      },
+      "item2ID": {
+        "itemName": "Non residential mortgage",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Payable to",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Collateral",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Maturity Date",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Monthly Payment",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Stated Interest Rate",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Implicit Interest Rate (if different)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Present Balance",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Non-residential mortgage liabilities",
+            "componentType": "table",
+            "componentDescription": "Obtain the following information for notes payable other than residential mortgage and other real estate loans."
+          },
+          "component2ID": {
+            "instruction": "Record the above notes payable in the statement of financial condition either separately or in the aggregate. Notes payable should be discounted for the interest rate implicit in the transaction at the date consummated. However, if the debt can currently be discharged at a lower amount, the debt should be presented at the lower amount.",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Notes payable note",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a notes payable note that describes the holder, interest rate, due date, monthly payment, and collateral."
+          }
+        }
+      },
+      "item3ID": {
+        "itemName": "Accounts payable and accrued liabilities",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Description (major credit cards, utilities, property taxes, insurance, etc.)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Present Balance",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Accounts payable",
+            "componentType": "table",
+            "componentDescription": "Obtain the following information for accounts payable (other than income taxes) and accrued liabilities:"
+          }
+        }
+      },
+      "item4ID": {
+        "itemName": "Noncancelable commitments",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Description",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Market Value (Discounted amount)",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Accounts payable",
+            "componentType": "table",
+            "componentDescription": "Obtain the following information for noncancelable commitments (e.g., fixed amounts of alimony for a definite future period; operating leases, such as automobile leases; and charitable pledges):"
+          },
+          "component2ID": {
+            "instruction": "Record the noncancelable commitments listed in step 5 in the statement of financial position. (NOTE: Only those commitments that are for fixed or determinable amounts and not contingent on life expectancy, a future event, or future service should be recorded.)",
+            "componentName": "Reminder:",
+            "componentType": "instructionitem",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Notes payable note",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes any noncancelable commitments not included in the financial statements because they are contingent."
+          }
+        }
+      },
+      "item5ID": {
+        "itemName": "Income Taxes",
+        "itemDescription": "",
+        "components": {
+          "component1ID": {
+            "value": [
+              [
+                {
+                  "value": "Estimated adjusted taxable income for the year",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Estimated current year income taxes",
+                  "disableEvents": true,
+                  "className": "thead",
+                  "colSpan": 2
+                }
+              ],
+              [
+                {
+                  "value": "Federal (estimated effective tax rate _______%)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "State (estimated effective tax rate _______%)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Total estimated current year income taxes",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Withholdings, estimated taxes paid, overpayments credited",
+                  "disableEvents": true,
+                  "className": "thead",
+                  "colSpan": 2
+                }
+              ],
+              [
+                {
+                  "value": "Federal",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "State",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Total withholdings",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Current year income taxes payable",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Unpaid taxes from completed tax years, if any",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ],
+              [
+                {
+                  "value": "Total current year income taxes payable",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Income taxes in excess of withholdings",
+            "componentType": "table",
+            "componentDescription": "Determine the income taxes payable in excess of withholdings. Attach any worksheets."
+          },
+          "component2ID": {
+            "value": [
+              [
+                {
+                  "value": "Description of Asset (List only those that have a different basis)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "(A) Estimated Current Value",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "(B) Income Tax Basis",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Excess of (A) over (B)",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Estimated Effective Tax Rates",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "Amount of Estimated Income Taxes",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" },
+                { "value": "" }
+              ]
+            ],
+            "componentName": "Estimated Income Taxes",
+            "componentType": "table",
+            "componentDescription": "Determine income taxes on the excess of estimated values over tax bases. Record in statement of financial condition between liabilities and net worth."
+          },
+          "component3ID": {
+            "fields": {
+              "field1ID": {
+                "type": "textarea",
+                "label": "Note:",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Tax bases and esitmated values differences",
+            "componentType": "fieldset",
+            "componentDescription": "Draft a note that describes the differences in tax bases and estimated current values of assets and estimated current amounts of liabilities. See Note L of Appendix 9F-1 and paragraph 903.22."
+          }
+        }
+      },
+      "item6ID": {
+        "itemName": "Personal Income And Expenses",
+        "itemDescription": "(Complete this section if a statement of changes in net worth is to be presented.)",
+        "components": {
+          "component1ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Salary, wages, and bonuses",
+                "value": "",
+                "placeholder": ""
+              },
+              "field2ID": {
+                "type": "number",
+                "label": "Dividends and interest income",
+                "value": "",
+                "placeholder": ""
+              },
+              "field3ID": {
+                "type": "number",
+                "label": "Gains on sales of investments",
+                "value": "",
+                "placeholder": ""
+              },
+              "field4ID": {
+                "type": "number",
+                "label": "Drawings from partnerships and proprietorships",
+                "value": "",
+                "placeholder": ""
+              },
+              "field5ID": {
+                "type": "number",
+                "label": "Consulting fees",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Realized Increases In Net Worth",
+            "componentType": "fieldset",
+            "componentDescription": ""
+          },
+          "component2ID": {
+            "value": [
+              [
+                {
+                  "value": "Others",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Realized Increases In Net Worth(Others)",
+            "componentType": "table",
+            "componentDescription": ""
+          },
+          "component3ID": {
+            "value": [
+              [
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Unrealized Increases In Net Worth",
+            "componentType": "table",
+            "componentDescription": "(list increases during the period in unrealized estimated current values)"
+          },
+          "component4ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Current year total income tax expense",
+                "value": "",
+                "placeholder": ""
+              },
+              "field2ID": {
+                "type": "number",
+                "label": "Interest expense",
+                "value": "",
+                "placeholder": ""
+              },
+              "field3ID": {
+                "type": "number",
+                "label": "Real estate taxes",
+                "value": "",
+                "placeholder": ""
+              },
+              "field4ID": {
+                "type": "number",
+                "label": "Losses on sales of investments",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "Realized Decreases In Net Worth",
+            "componentType": "fieldset",
+            "componentDescription": ""
+          },
+          "component5ID": {
+            "value": [
+              [
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Personal expenditures",
+            "componentType": "table",
+            "componentDescription": "(list major ones and include all others in one total)"
+          },
+          "component6ID": {
+            "value": [
+              [
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                },
+                {
+                  "value": "",
+                  "disableEvents": true,
+                  "className": "thead"
+                }
+              ],
+              [{ "value": "" }, { "value": "" }]
+            ],
+            "componentName": "Unrealized Decreases In Net Worth",
+            "componentType": "table",
+            "componentDescription": "(list decreases during the period in unrealized estimated current values)"
+          },
+          "component7ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Income taxes associated with any increases during the period in estimated current values",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "",
+            "componentType": "fieldset",
+            "componentDescription": ""
+          },
+          "component8ID": {
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Net Increase (Decrease) In Net Worth",
+                "value": "",
+                "placeholder": ""
+              }
+            },
+            "componentName": "",
+            "componentType": "fieldset",
+            "componentDescription": ""
+          }
+        }
+      }
+    }
+  }
+}

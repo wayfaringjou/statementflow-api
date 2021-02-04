@@ -10,6 +10,7 @@ const jsonParser = express.json();
 const serializeStatement = (statement) => ({
   id: statement.id,
   clientId: statement.clientId,
+  statementDate: statement.statementDate,
   values: statement.values,
 });
 
@@ -25,8 +26,8 @@ statementsRouter
     }
   })
   .post(jsonParser, async (req, res, next) => {
-    const { clientId, values } = req.body;
-    const newStatement = { clientId, values };
+    const { clientId, statementDate, values } = req.body;
+    const newStatement = { clientId, statementDate, values };
 
     const newStatementKeys = Object.keys(newStatement);
     newStatementKeys.forEach((key) => {
@@ -73,8 +74,8 @@ statementsRouter
     res.json(serializeStatement(res.statement));
   })
   .patch(jsonParser, async (req, res, next) => {
-    const { values } = req.body;
-    const statementToUpdate = { values };
+    const { statementDate, values } = req.body;
+    const statementToUpdate = { statementDate, values };
     try {
       await statementsService.updateStatement(
         req.app.get('db'),

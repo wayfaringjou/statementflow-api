@@ -1,0 +1,75 @@
+{
+  "section1ID": {
+    "sectionName": "Section Name",
+    "sectionDescription": "Section description",
+    "sectionPosition": 1,
+    "items": {
+      "item1ID": {
+        "itemName": "Item Name",
+        "itemDescription": "Item description",
+        "itemPosition": 1,
+        "itemNote": {
+          "name": "Note for this item",
+          "description": "Description for this note",
+          "tableReference": {
+            "cols": [0, 1]
+          }
+        },
+        "itemTotal": {
+          "sectionKey": "section1ID",
+          "itemKey": "item1ID",
+          "componentKey": "component4ID",
+          "fieldKey": "field2ID",
+          "value": "Text"
+        },
+        "components": {
+          "component1ID": {
+            "componentType": "table",
+            "componentName": "Component Name",
+            "componentDescription": "Component description.",
+            "componentPosition": 1,
+            "value": [
+              [{ "value": "" }, { "value": "" }],
+              [{ "value": "" }, { "value": "" }]
+            ]
+          },
+          "component2ID": {
+            "componentType": "fieldset",
+            "componentName": "Component Name",
+            "componentDescription": "Component description.",
+            "componentPosition": 2,
+            "fields": {
+              "field1ID": {
+                "type": "number",
+                "label": "Field label",
+                "placeholder": 0,
+                "value": 0
+              }
+            }
+          },
+          "component3ID": {
+            "componentType": "instructionitem",
+            "componentName": "Component Name",
+            "componentDescription": "Component description.",
+            "componentPosition": 3,
+            "instruction": "Instruction."
+          },
+          "component4ID": {
+            "componentType": "fieldset",
+            "componentName": "Component Name",
+            "componentDescription": "Component description.",
+            "componentPosition": 4,
+            "fields": {
+              "field2ID": {
+                "type": "textarea",
+                "label": "Field label",
+                "value": "Text",
+                "placeholder": "Placeholder"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
